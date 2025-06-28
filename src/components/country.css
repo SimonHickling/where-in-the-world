@@ -136,3 +136,12 @@ body.dark-mode p {
 body.dark-mode .no-borders {
   color: #9b9b9b;
 }
+body.dark-mode .back-btn {
+  color: #b7b7b7;
+  border: none;
+}
+body.dark-mode .back-btn:hover {
+  color: #9b9b9b;
+  border: none;
+  background-color: #1a242c;
+}
