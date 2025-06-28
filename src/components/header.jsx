@@ -1,7 +1,6 @@
 import React from "react";
 import './header.css'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faMoon } from '@fortawesome/free-solid-svg-icons';
+
 
 const Header = ({onToggleDark} ) => {
     return (
@@ -10,7 +9,7 @@ const Header = ({onToggleDark} ) => {
                         <div className="site-title">
                             <h1>Where in the World?</h1>
                             <button onClick={onToggleDark}>
-                                <FontAwesomeIcon icon={faMoon} className="dark-mode-icon" />
+                                <img src="/images/moon-svgrepo-com.svg" alt="Dark Mode Icon"/>
                                 &nbsp;Dark Mode
                             </button>
                         </div>

@@ -29,6 +29,9 @@
 }
 
 .site-title button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   border: none;
   height: 40px;
   width: 100px;
@@ -36,6 +39,11 @@
   cursor: pointer;
   color: rgb(131, 131, 131);
   box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.1);
+}
+
+.site-title button img {
+  width: 15px;
+  color: #dddddd;
 }
 .site-title button:hover {
   background-color: rgb(231, 231, 231);

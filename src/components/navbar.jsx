@@ -1,7 +1,6 @@
 import React from "react";
 import './navbar.css'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons';
+
 
 
 const Navbar = ({onSearch, onRegionChange }) => {
@@ -18,7 +17,7 @@ const Navbar = ({onSearch, onRegionChange }) => {
           
             <div className="search-functions">
                 <div className="search-input-wrapper">
-                     <FontAwesomeIcon icon={faMagnifyingGlass} className="search-icon" />
+                    <img src="/images/magnifying-glass-8-svgrepo-com.svg" alt="Search Icon" className="magnifying-icon" />
                     <input type="text" name="query" onChange={handleInput} placeholder="Search for a country..." />
                 </div>
                     <select onChange={handleRegion} defaultValue={""}>
