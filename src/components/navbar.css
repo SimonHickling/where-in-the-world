@@ -1,0 +1,132 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  color: black;
+  padding: 0;
+}
+
+.header-bar {
+  display: flex;
+  width: 100%;
+  min-height: 90px;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgb(246, 246, 246);
+  padding: 15px;
+  box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.2);
+}
+
+.site-title {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 10px;
+}
+.site-title h1 {
+  font-size: 1.8rem;
+}
+
+.site-title button {
+  border: none;
+  height: 40px;
+  width: 100px;
+  border-radius: 10px;
+  cursor: pointer;
+  color: rgb(98, 98, 98);
+}
+.site-title button:hover {
+  background-color: rgb(231, 231, 231);
+  border: 2px solid rgb(207, 207, 207);
+  color: black;
+}
+
+.search-functions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 15px;
+}
+
+.search-input-wrapper {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  background-color: rgb(246, 246, 246);
+  padding: 15px;
+  margin: 0 0 15px 0;
+  border-radius: 5px;
+  box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.1);
+}
+
+.search-icon {
+  color: #b0b0b0;
+  font-size: 1rem;
+}
+.search-input-wrapper input {
+  border: none;
+  background: transparent;
+  padding-left: 30px;
+  font-size: 1rem;
+}
+
+select {
+  font-size: 1rem;
+  width: 100%;
+  border: none;
+  padding: 15px;
+  border-radius: 5px;
+  box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.1);
+  background-color: rgb(246, 246, 246);
+}
+
+input:focus {
+  border: none;
+  outline: none;
+}
+select:focus {
+  border: none;
+  outline: none;
+}
+body.dark-mode .header-bar {
+  background-color: #2b3743;
+}
+
+body.dark-mode .header-bar h1 {
+  color: #f5f5f5;
+}
+
+body.dark-mode .search-input-wrapper,
+body.dark-mode input,
+body.dark-mode select,
+body.dark-mode select option {
+  background-color: #2b3743;
+  color: #f5f5f5;
+  border: none;
+}
+
+@media (min-width: 750px) {
+  .search-functions {
+    flex-direction: row;
+  }
+  .search-input-wrapper {
+    margin: 15px;
+  }
+}
+@media (min-width: 1000px) {
+  .header-bar {
+    justify-content: left;
+    padding-left: 2rem;
+  }
+
+  .search-functions {
+    justify-content: space-between;
+  }
+  .search-input-wrapper {
+    width: 40%;
+  }
+
+  select {
+    width: 25%;
+  }
+}

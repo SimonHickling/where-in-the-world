@@ -1,0 +1,43 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  color: black;
+  padding: 0;
+}
+
+.header-bar {
+  display: flex;
+  width: 100%;
+  min-height: 90px;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgb(246, 246, 246);
+  padding: 1rempx;
+  box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.2);
+}
+
+.site-title {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 10px;
+}
+.site-title h1 {
+  font-size: 1.8rem;
+  color: rgb(77, 77, 77);
+}
+
+.site-title button {
+  border: none;
+  height: 40px;
+  width: 100px;
+  border-radius: 10px;
+  cursor: pointer;
+  color: rgb(98, 98, 98);
+}
+.site-title button:hover {
+  background-color: rgb(231, 231, 231);
+  border: 2px solid rgb(207, 207, 207);
+  color: black;
+}
